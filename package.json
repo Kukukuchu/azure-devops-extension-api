@@ -1,29 +1,61 @@
 {
   "name": "azure-devops-extension-api",
+  "version": "4.238.0",
+  
   "type": "module",
   "main": "lib/index.js",
   "module": "lib/index.js",
   "types": "lib/index.d.ts",
-  "version": "4.238.0",
-  "description": "REST client libraries and contracts for Azure DevOps web extension developers.",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Microsoft/azure-devops-extension-api.git"
+  "exports": {
+    ".": "./lib/index.js",
+    "./*": "./lib/*/index.js",
+    "./Accounts/*": "./lib/Accounts/*.js",
+    "./Alert/*": "./lib/Alert/*.js",
+    "./Boards/*": "./lib/Boards/*.js",
+    "./Build/*": "./lib/Build/*.js",
+    "./Comments/*": "./lib/Comments/*.js",
+    "./Common/*": "./lib/Common/*.js",
+    "./Contributions/*": "./lib/Contributions/*.js",
+    "./Core/*": "./lib/Core/*.js",
+    "./Dashboard/*": "./lib/Dashboard/*.js",
+    "./DistributedTaskCommon/*": "./lib/DistributedTaskCommon/*.js",
+    "./ExtensionManagement/*": "./lib/ExtensionManagement/*.js",
+    "./Favorite/*": "./lib/Favorite/*.js",
+    "./FeatureAvailability/*": "./lib/FeatureAvailability/*.js",
+    "./FeatureManagement/*": "./lib/FeatureManagement/*.js",
+    "./FileContainer/*": "./lib/FileContainer/*.js",
+    "./FormInput/*": "./lib/FormInput/*.js",
+    "./Gallery/*": "./lib/Gallery/*.js",
+    "./Git/*": "./lib/Git/*.js",
+    "./Graph/*": "./lib/Graph/*.js",
+    "./Identities/*": "./lib/Identities/*.js",
+    "./Locations/*": "./lib/Locations/*.js",
+    "./Management/*": "./lib/Management/*.js",
+    "./Notification/*": "./lib/Notification/*.js",
+    "./Operations/*": "./lib/Operations/*.js",
+    "./Pipelines/*": "./lib/Pipelines/*.js",
+    "./Policy/*": "./lib/Policy/*.js",
+    "./Profile/*": "./lib/Profile/*.js",
+    "./ProjectAnalysis/*": "./lib/ProjectAnalysis/*.js",
+    "./Release/*": "./lib/Release/*.js",
+    "./ServiceEndpoint/*": "./lib/ServiceEndpoint/*.js",
+    "./TaskAgent/*": "./lib/TaskAgent/*.js",
+    "./Test/*": "./lib/Test/*.js",
+    "./TestPlan/*": "./lib/TestPlan/*.js",
+    "./TestResults/*": "./lib/TestResults/*.js",
+    "./Tfvc/*": "./lib/Tfvc/*.js",
+    "./WebApi/*": "./lib/WebApi/*.js",
+    "./Wiki/*": "./lib/Wiki/*.js",
+    "./Work/*": "./lib/Work/*.js",
+    "./WorkItemTracking/*": "./lib/WorkItemTracking/*.js",
+    "./WorkItemTrackingProcess/*": "./lib/WorkItemTrackingProcess/*.js",
+    "./WorkItemTrackingProcessDefinitions/*": "./lib/WorkItemTrackingProcessDefinitions/*.js"
   },
+
   "scripts": {
     "build": "node buildpackage.js"
   },
-  "keywords": [
-    "extensions",
-    "Azure DevOps",
-    "Visual Studio Team Services"
-  ],
-  "author": "Microsoft",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://aka.ms/AAk5pcm"
-  },
-  "homepage": "https://docs.microsoft.com/en-us/azure/devops/integrate",
+
   "dependencies": {
     "whatwg-fetch": "~3.0.0"
   },
@@ -34,5 +66,23 @@
     "glob": "~7.1.2",
     "shelljs": "~0.8.5",
     "typescript": "^2.9.2"
-  }
+  },
+
+  "description": "REST client libraries and contracts for Azure DevOps web extension developers.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Microsoft/azure-devops-extension-api.git"
+  },
+  
+  "keywords": [
+    "extensions",
+    "Azure DevOps",
+    "Visual Studio Team Services"
+  ],
+  "author": "Microsoft",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://aka.ms/AAk5pcm"
+  },
+  "homepage": "https://docs.microsoft.com/en-us/azure/devops/integrate"
 }
