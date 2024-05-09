@@ -1,7 +1,9 @@
 {
   "name": "azure-devops-extension-api",
   "type": "module",
-  "main": "build/index.js",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "types": "lib/index.d.ts",
   "version": "4.237.0",
   "description": "REST client libraries and contracts for Azure DevOps web extension developers.",
   "repository": {
